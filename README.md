@@ -1,59 +1,100 @@
-# Admin
+# SB Admin Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+SB Admin Angular is a free and open-sourced Bootstrap themed Angular 9 starter project.
 
-## Development server
+It shares the same project structure and subset of tooling from our professional offering,
+[SB Admin Pro Angular](https://themes.startbootstrap.com/sb-admin-pro-angular/),
+so much of the [SB Admin Pro Angular Documentation](https://docs.startbootstrap.com/sb-admin-pro-angular/quickstart) is applicable.
 
-To start a local development server, run:
+In particular the documentation for [Structure](https://docs.startbootstrap.com/sb-admin-pro-angular/structure-root-level),
+and the documentation for [SBPro Schematics](https://docs.startbootstrap.com/sb-admin-pro-angular/development-general#sb-pro-schematics)
 
-```bash
-ng serve
-```
+SB Admin Angular comes with a base implementation of navigation and layouts.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+For professionally designed components (including an advanced SideNav), 100% code coverage,
+starter cypress tests and more, please consider our professional offering:
+[SB Admin Pro Angular](https://themes.startbootstrap.com/sb-admin-pro-angular/)
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Quick Start
 
 ```bash
-ng generate --help
+git clone git@github.com:startbootstrap/sb-admin-angular.git
+cd sb-admin-angular
+npm install
+npm start
 ```
 
-## Building
+`npm start` should open a browser window to <http://localhost:4200>
 
-To build the project run:
+By default angular runs on port 4200. To change this port you can run:
 
 ```bash
-ng build
+# This starts the development server on port 4205,
+# but you can use any port you'd like
+export PORT=4205 && npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Tests
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Unit Tests
 
 ```bash
-ng test
+npm run test
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### e2e
 
 ```bash
-ng e2e
+npm run e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Production
 
-## Additional Resources
+SB Admin Angular come with a production ready Dockerfile and build scripts.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+You can get Docker [here](https://www.docker.com/get-started)
+
+```bash
+npm run docker:build
+npm run docker:run
+```
+
+## Generate Code
+
+```bash
+npm run generate:module -- --path src/modules --name Test
+npm run generate:component -- --path src/modules/test/containers --name Test
+npm run generate:component -- --path src/modules/test/components --name Test
+npm run generate:directive -- --path src/modules/test/directives --name Test
+npm run generate:service -- --path src/modules/test/services --name Test
+```
+
+_Note: Creating a Component and a Container use the same command,
+the difference is just the paths and how they are used._
+
+### MVCC
+
+Containers and Components are both Angular Components, but used in different ways.
+
+Containers should arrange Components.
+
+Obviously this can become subjective, but MVCC is the paradigm that we subscribe to.
+
+## Troubleshooting
+
+### npm start
+
+If you receive memory issues adjust
+`max_old_space_size` in the `ng` command of the `package.json`:
+
+```json
+"ng": "cross-env NODE_OPTIONS=--max_old_space_size=2048 ./node_modules/.bin/ng",
+```
+
+You can adjust 2048 to any number you need.
+
+For more information about why you may need `--max_old_space_size`
+see [this article](https://medium.com/@ashleydavis75/node-js-memory-limitations-30d3fe2664c0).
+
+Keep in mind that this project only uses node to build the angular application.
+There is no production dependency on node.
