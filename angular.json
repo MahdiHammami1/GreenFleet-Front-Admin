@@ -131,7 +131,6 @@
       }
     }
   },
-  "defaultProject": "sb-admin-angular",
   "cli": {
     "analytics": "9fd62702-e290-4b5e-b480-b980df3dddcd"
   }
