@@ -1,100 +1,133 @@
-# SB Admin Angular
+# Gradient Able Angular 17 Free Admin Dashboard [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20Gradient%20%20Able%20Angular%20-%20The%20Most%20Beautiful%20Bootstrap%20Designed%20Admin%20Dashboard%20Template%20&url=https://codedthemes.com/demos/admin-templates/gradient-able/angular/default&via=codedthemes&hashtags=angular,webdev,developers,typescript)
 
-SB Admin Angular is a free and open-sourced Bootstrap themed Angular 9 starter project.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://codedthemes.com/item/gradient-able-angular-free-admin-template/)
 
-It shares the same project structure and subset of tooling from our professional offering,
-[SB Admin Pro Angular](https://themes.startbootstrap.com/sb-admin-pro-angular/),
-so much of the [SB Admin Pro Angular Documentation](https://docs.startbootstrap.com/sb-admin-pro-angular/quickstart) is applicable.
+Gradient Able is a free angular admin dashboard template built with Angular and latest Bootstrap 5. It is meant to provide the best possible User Experience with highly customizable feature-rich pages. It is a complete Dashboard Template that has easy and intuitive responsive design whether it is viewed on retina screens or laptops.
 
-In particular the documentation for [Structure](https://docs.startbootstrap.com/sb-admin-pro-angular/structure-root-level),
-and the documentation for [SBPro Schematics](https://docs.startbootstrap.com/sb-admin-pro-angular/development-general#sb-pro-schematics)
+:star: :star: :star: Do not forget to star (Top right of this page) it if you like the theme :star: :star: :star:
 
-SB Admin Angular comes with a base implementation of navigation and layouts.
+![IMG_8566.jpg](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-ANGULAR-REPO%20-%20Gradient.jpg)
 
-For professionally designed components (including an advanced SideNav), 100% code coverage,
-starter cypress tests and more, please consider our professional offering:
-[SB Admin Pro Angular](https://themes.startbootstrap.com/sb-admin-pro-angular/)
+[Pro version](https://codedthemes.com/item/gradient-able-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium) of Gradient Able Angular Dashboard template contains features like TypeScript, Apps, Authentication Methods (i.e. JWT), Advance Components, Form Plugins, Layouts, Widgets, and many more.
 
-## Quick Start
+| [Gradient Able Free](https://codedthemes.com/demos/admin-templates/gradient-able/angular/free/) | [Gradient Able](https://codedthemes.com/item/gradient-able-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)            |
+| -------------------------------------------------------     | :------------------------------------------------------------------------------- |
+| **9** Demo pages                                            | **45+** demo pages                                                               |
+| -                                                           | ✓ Multi-language                                                                 |
+| -                                                           | ✓ Dark/Light Mode 🌓                                                             |
+| -                                                           | ✓ TypeScript version                                                             |
+| -                                                           | ✓ 6+ color Options                                                               |
+| -                                                           | ✓ RTL                                                                            |
+| ✓ MIT License                                               | ✓ [Pro License](https://codedthemes.com/item/gradient-able-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)                |
 
-```bash
-git clone git@github.com:startbootstrap/sb-admin-angular.git
-cd sb-admin-angular
-npm install
-npm start
+## Why Gradient Able?
+
+Gradient Able is offers everything you need to create dashboards. We have included the following high-end features in our initial release:
+
+- Modern aesthetics UI design
+- Bootstrap components
+- Fully Responsive, all modern browser supported
+- Easy to use code structure
+- Flexible & High-Performance code
+- Easy Documentation Guide
+
+## Gradient Able Free version
+
+#### Preview
+
+- [Demo](https://codedthemes.com/demos/admin-templates/gradient-able/angular/free)
+
+#### Download
+
+- [Download from GitHub](https://github.com/codedthemes/gradient-able-free-admin-template)
+
+## Gradient Able Pro version
+
+#### Preview
+
+- [Demo](https://codedthemes.com/demos/admin-templates/gradient-able/angular/default/)
+
+#### Purchase
+
+- [Purchase from CodedThemes](https://codedthemes.com/item/gradient-able-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
+
+## Table of contents
+
+- [Getting Started](#getting-started)
+- [Documentation](#documentation)
+- [Technology Stack](#technology-stack)
+- [Author](#author)
+- [Issues?](#issues)
+- [License](#license)
+- [More Free Angular Templates](#more-free-angular-dashboard-templates)
+- [More Pro Angular Templates](#more-premium-angular-dashboard-templates)
+- [Follow us](#follow-us)
+
+## Getting Started
+
+1. Clone from Github
+
+```
+git clone https://github.com/codedthemes/gradient-able-free-admin-template.git
 ```
 
-`npm start` should open a browser window to <http://localhost:4200>
+2. Install packages
 
-By default angular runs on port 4200. To change this port you can run:
-
-```bash
-# This starts the development server on port 4205,
-# but you can use any port you'd like
-export PORT=4205 && npm start
+```
+yarn
 ```
 
-## Tests
+3. Run project
 
-### Unit Tests
-
-```bash
-npm run test
+```
+yarn start
 ```
 
-### e2e
+## Documentation
 
-```bash
-npm run e2e
-```
+[Gradient Able Angular Documentation](https://codedthemes.gitbook.io/gradient-able-angular) helps you with installation, deployment, and troubleshooting.
 
-## Production
+## Technology Stack
 
-SB Admin Angular come with a production ready Dockerfile and build scripts.
+- Bootstrap 5
+- Angular 17
 
-You can get Docker [here](https://www.docker.com/get-started)
+## Author
 
-```bash
-npm run docker:build
-npm run docker:run
-```
+Gradient Able is developed by Team [CodedThemes](https://codedthemes.com).
 
-## Generate Code
+## Issues
 
-```bash
-npm run generate:module -- --path src/modules --name Test
-npm run generate:component -- --path src/modules/test/containers --name Test
-npm run generate:component -- --path src/modules/test/components --name Test
-npm run generate:directive -- --path src/modules/test/directives --name Test
-npm run generate:service -- --path src/modules/test/services --name Test
-```
+To report a bug, please submit an [issue](https://github.com/codedthemes/gradient-able-free-admin-template/issues) on Github. We will respond as soon as possible to resolve the issue.
 
-_Note: Creating a Component and a Container use the same command,
-the difference is just the paths and how they are used._
+## License
 
-### MVCC
+- Licensed cover under [MIT](https://github.com/codedthemes/gradient-able-free-admin-template/blob/main/angular/LICENSE)
 
-Containers and Components are both Angular Components, but used in different ways.
+## Gradient Able - React version
 
-Containers should arrange Components.
+- [Premium](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
 
-Obviously this can become subjective, but MVCC is the paradigm that we subscribe to.
+## More Free Angular Dashboard Templates
 
-## Troubleshooting
+- [Mantis Angular](https://codedthemes.com/item/mantis-angular-free-admin-template/)
+- [Datta Able Angular](https://codedthemes.com/item/datta-able-angular-lite/)
+- [Next Angular](https://codedthemes.com/item/next-free-admin-template/)
+- [Berry Angular](https://codedthemes.com/item/berry-angular-free-admin-template/)
 
-### npm start
+## More Premium Angular Dashboard Templates
 
-If you receive memory issues adjust
-`max_old_space_size` in the `ng` command of the `package.json`:
+- [Mantis Angular Pro](https://codedthemes.com/item/mantis-angular-admin-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
+- [Datta Able Angular Pro](https://codedthemes.com/item/datta-able-angular/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
+- [Next Angular Pro](https://codedthemes.com/item/next-angular-admin-template/)
+- [Berry Angular Pro](https://codedthemes.com/item/berry-angular-admin-dashboard-template/?utm_source=free_demo&utm_medium=codedthemes&utm_campaign=button_download_premium)
 
-```json
-"ng": "cross-env NODE_OPTIONS=--max_old_space_size=2048 ./node_modules/.bin/ng",
-```
+## Follow us
 
-You can adjust 2048 to any number you need.
-
-For more information about why you may need `--max_old_space_size`
-see [this article](https://medium.com/@ashleydavis75/node-js-memory-limitations-30d3fe2664c0).
-
-Keep in mind that this project only uses node to build the angular application.
-There is no production dependency on node.
+- Website [https://codedthemes.com/demos/admin-templates/gradient-able/angular/default](https://codedthemes.com/demos/admin-templates/gradient-able/angular/default)
+- Blog [https://blog.codedthemes.com/](https://blog.codedthemes.com/)
+- CodedThemes [https://codedthemes.com](https://codedthemes.com)
+- Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
+- Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
+- Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)

@@ -1,48 +1,36 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-    "angularCompilerOptions": {
-        "enableIvy": false,
-        "fullTemplateTypeCheck": true,
-        "preserveWhitespaces": false,
-        "strictInjectionParameters": true
-    },
-    "compileOnSave": false,
-    "compilerOptions": {
-      "baseUrl": "src",
-      "declaration": false,
-      "downlevelIteration": true,
-      "esModuleInterop": true,
-      "experimentalDecorators": true,
-      "importHelpers": true,
-      "lib": [
-        "es2018",
-        "dom"
-      ],
-      "module": "esnext",
-      "moduleResolution": "node",
-      "noImplicitAny": true,
-      "outDir": "./dist/out-tsc",
-      "paths": {
-        "@app/*": [
-          "app/*"
-        ],
-        "@common/*": [
-          "modules/app-common/*"
-        ],
-        "@modules/*": [
-          "modules/*"
-        ],
-        "@testing/*": [
-          "testing/*"
-        ]
-      },
-      "resolveJsonModule": true,
-      "sourceMap": true,
-      "strict": true,
-      "target": "ES2022",
-      "typeRoots": [
-        "node_modules/@types",
-        "src/typings"
-      ],
-      "useDefineForClassFields": false
-    }
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "target": "es2022", // this will auto target to latest by angular cli
+    "module": "es2020",
+    "lib": [
+      "es2022", // this will auto target to latest by angular cli
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }

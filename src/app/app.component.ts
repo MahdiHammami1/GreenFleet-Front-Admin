@@ -1,24 +1,27 @@
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { ChildActivationEnd, Router } from '@angular/router';
-import { filter } from 'rxjs/operators';
+// Angular Import
+import { Component, OnInit, inject } from '@angular/core';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
+
+// project import
+import { SpinnerComponent } from './theme/shared/components/spinner/spinner.component';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
+  selector: 'app-root',
+  imports: [RouterModule, SpinnerComponent],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-    title = 'sb-admin-angular';
-    constructor(public router: Router, private titleService: Title) {
-        this.router.events
-            .pipe(filter(event => event instanceof ChildActivationEnd))
-            .subscribe(event => {
-                let snapshot = (event as ChildActivationEnd).snapshot;
-                while (snapshot.firstChild !== null) {
-                    snapshot = snapshot.firstChild;
-                }
-                this.titleService.setTitle(snapshot.data.title || 'SB Admin Angular');
-            });
-    }
+export class AppComponent implements OnInit {
+  private router = inject(Router);
+
+
+  // life cycle event
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
+  }
 }
