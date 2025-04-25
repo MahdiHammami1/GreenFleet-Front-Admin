@@ -214,9 +214,9 @@ export default class DashAnalyticsComponent {
   cards = [
     {
       background: 'bg-c-blue',
-      title: 'Orders Received',
+      title: 'Rides Shared',
       icon: 'icon-shopping-cart',
-      text: 'Completed Orders',
+      text: 'Five-Star Rated Rides',
       number: '486',
       no: '351'
     },
@@ -238,11 +238,11 @@ export default class DashAnalyticsComponent {
     },
     {
       background: 'bg-c-red',
-      title: 'Total Profit',
+      title: 'Total Distance Shared',
       icon: 'icon-shopping-cart',
       text: 'This Month',
-      number: '$9,562',
-      no: '$542'
+      number: '42,560 km',
+      no: '$1083'
     }
   ];
 
