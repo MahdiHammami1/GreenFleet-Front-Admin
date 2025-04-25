@@ -7,18 +7,20 @@ $Menu-collapsed-width: 70px;
 $soft-bg-level: -80%;
 
 // color list for build layouts
-$primary-color: #4099ff;
-$warning-color: #ffb64d;
-$danger-color: #ff5370;
-$success-color: #2ed8b6;
-$purple-color: #7759de;
-$info-color: #00bcd4;
+$primary-color: #1B4242;
+$warning-color: #457c68;
+$danger-color: #344D59;
+$success-color: #D9B26F;
+$purple-color: #b48d8d;
+$info-color: #9EC8B9;
 $secondary-color: #748892;
 $default-color: #d6d6d6;
 $light-color: #eceff1;
 $dark-color: #263238;
 $inverse-color: $dark-color;
 $theme-border: #e2e5e8;
+
+
 
 // header
 $header-dark-background: #3b4650;
@@ -38,11 +40,11 @@ $dark-layout: darken(#3b4650, 8%);
 $dark-layout-font: #adb7be;
 
 // Menu icon
-$menu-icon-color: #4099ff, #ff5370, #01a9ac, #7759de, #00bcd4, $warning-color;
+$menu-icon-color: #1f334b, #490e18, #1b4243, #1f1c29, #0b2427, $warning-color;
 // Header background
 $color-header-name: blue, red, purple, info, dark, orange, green, yellow, orchidGreen, indigoGreen, darkGreen, darkblue;
-$color-header-color: #4099ff, #ff5370, #4099ff, #38a9f9, #3b4650, #ff784f, #11c788, #ff5858, #39adb5, #473b7b, #000000, #2d0102;
-$color-header-color2: #73b4ff, #f48fb1, #6e7ff3, #43e9b3, #647688, #ff5370, #54e2b7, #f09819, #7c4dff, #30d2be, #0fb3c2, #091991;
+$color-header-color: #1f2936, #312b2c, #c2ccd6, #394751, #00182e, #ffdbd0, #445650, #875656, #a5b6b7, #c0badc, #000000, #6d4e4f;
+$color-header-color2: #3d444d, #7c5260, #6e7ff3, #51655f, #647688, #4e3b3e, #4b5f59, #4d463c, #8c859e, #adfff5, #838e8f, #9496a8;
 
 // Menu background
 $color-menu-name: blue, red, purple, info, dark;
