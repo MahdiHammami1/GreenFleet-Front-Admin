@@ -21,340 +21,340 @@ export class ProductSaleComponent {
   // public method
   product_sale = [
     {
-      title: 'Campaign date'
+      title: 'Enrollment Date'
     },
     {
-      title: 'Click',
-      icon: 'icon-help-circle'
+      title: 'Username',
     },
     {
-      title: 'Cost',
-      icon: 'icon-help-circle'
+      title: 'Email Address',
     },
     {
-      title: 'CTR',
-      icon: 'icon-help-circle'
+      title: 'Phone Number',
     },
     {
-      title: 'ARPU',
-      icon: 'icon-help-circle'
+      title: 'Status',
     },
     {
-      title: 'ECPI',
-      icon: 'icon-help-circle'
+      title: 'Last Login',
     },
     {
-      title: 'ROI',
-      icon: 'icon-help-circle'
+      title: 'Location',
     },
     {
-      title: 'Revenue',
-      icon: 'icon-help-circle'
+      title: 'Completed Rides',
     },
     {
-      title: 'Conversions',
-      icon: 'icon-help-circle'
+      title: 'Profile Completion',
+      icon: 'icon-user-check',
     }
   ];
 
   progressBar: ProgressBarItem[] = [
+   
     {
-      value: '786',
-      color: 'danger',
-      percentage: 60
-    },
-    {
-      value: '485',
-      color: 'primary',
+      value: 'Hammami Mahdi', // Username
+      color: '',
       percentage: 50
     },
     {
-      value: '769',
-      color: 'warning',
+      value: 'hammami@example.com', // Email Address
+      color: '',
       percentage: 70
     },
     {
-      value: '45,3%',
-      color: 'success',
+      value: '+1 555-123-4567', // Phone Number
+      color: '',
       percentage: 60
     },
     {
-      value: '6,7%',
-      color: 'info',
+      value: 'Active', // Status
+      color: '',
       percentage: 30
     },
     {
-      value: '8,56',
-      color: 'danger',
+      value: '2 hours ago', // Last Login
+      color: '',
       percentage: 40
     },
     {
-      value: '10:55',
-      color: 'warning',
+      value: 'New York, USA', // Location
+      color: '',
       percentage: 70
     },
     {
-      value: '33.8%',
-      color: 'success',
+      value: '45', // Completed Rides
+      color: '',
       percentage: 40
+    },
+    {
+      value: '75%', // Profile Completion
+      color: '',
+      percentage: 75
     }
   ];
 
   progressBar2: ProgressBarItem[] = [
+   
     {
-      value: '786',
-      color: 'danger',
-      percentage: 65
-    },
-    {
-      value: '523',
+      value: 'john_doe', // Username
       color: 'primary',
       percentage: 80
     },
     {
-      value: '736',
+      value: 'john@example.com', // Email Address
       color: 'warning',
       percentage: 80
     },
     {
-      value: '78,3%',
+      value: '+1 555-987-6543', // Phone Number
       color: 'success',
       percentage: 70
     },
     {
-      value: '6,6%',
+      value: 'Inactive', // Status
       color: 'info',
       percentage: 70
     },
     {
-      value: '7,56',
+      value: '1 day ago', // Last Login
       color: 'danger',
       percentage: 44
     },
     {
-      value: '4:30',
+      value: 'London, UK', // Location
       color: 'warning',
       percentage: 68
     },
     {
-      value: '76.8%',
+      value: '78', // Completed Rides
       color: 'success',
+      percentage: 90
+    },
+    {
+      value: '90%', // Profile Completion
+      color: 'primary',
       percentage: 90
     }
   ];
 
   progressBar3: ProgressBarItem[] = [
+   
     {
-      value: '624',
-      color: 'danger',
-      percentage: 45
-    },
-    {
-      value: '436',
+      value: 'alice_smith', // Username
       color: 'primary',
       percentage: 55
     },
     {
-      value: '756',
+      value: 'alice@example.com', // Email Address
       color: 'warning',
       percentage: 95
     },
     {
-      value: '78,3%',
+      value: '+44 7700 900123', // Phone Number
       color: 'success',
       percentage: 38
     },
     {
-      value: '6,4%',
+      value: 'Pending', // Status
       color: 'info',
       percentage: 38
     },
     {
-      value: '9,45',
+      value: '3 days ago', // Last Login
       color: 'danger',
       percentage: 38
     },
     {
-      value: '9:05',
+      value: 'Paris, France', // Location
       color: 'warning',
       percentage: 38
     },
     {
-      value: '8.63%',
+      value: '62', // Completed Rides
       color: 'success',
       percentage: 38
+    },
+    {
+      value: '50%', // Profile Completion
+      color: 'info',
+      percentage: 50
     }
   ];
 
   progressBar4: ProgressBarItem[] = [
+    
     {
-      value: '423',
-      color: 'danger',
-      percentage: 54
-    },
-    {
-      value: '123',
+      value: 'bob_johnson', // Username
       color: 'primary',
       percentage: 70
     },
     {
-      value: '756',
+      value: 'bob@example.com', // Email Address
       color: 'warning',
       percentage: 75
     },
     {
-      value: '78,6%',
+      value: '+1 555-456-7890', // Phone Number
       color: 'success',
       percentage: 60
     },
     {
-      value: '45,6%',
+      value: 'Active', // Status
       color: 'info',
       percentage: 90
     },
     {
-      value: '6,85',
+      value: '5 hours ago', // Last Login
       color: 'danger',
       percentage: 38
     },
     {
-      value: '7:45',
+      value: 'Tokyo, Japan', // Location
       color: 'warning',
       percentage: 40
     },
     {
-      value: '33.8%',
+      value: '42', // Completed Rides
       color: 'success',
       percentage: 80
+    },
+    {
+      value: '85%', // Profile Completion
+      color: 'primary',
+      percentage: 85
     }
   ];
 
   progressBar5: ProgressBarItem[] = [
+   
     {
-      value: '465',
-      color: 'danger',
-      percentage: 66
-    },
-    {
-      value: '463',
+      value: 'emma_watson', // Username
       color: 'primary',
       percentage: 66
     },
     {
-      value: '456',
+      value: 'emma@example.com', // Email Address
       color: 'warning',
       percentage: 38
     },
     {
-      value: '68,6%',
+      value: '+44 7700 123456', // Phone Number
       color: 'success',
       percentage: 38
     },
     {
-      value: '76,6%',
+      value: 'Suspended', // Status
       color: 'info',
       percentage: 32
     },
     {
-      value: '7,56',
+      value: '1 week ago', // Last Login
       color: 'danger',
       percentage: 70
     },
     {
-      value: '8:45',
+      value: 'Sydney, Australia', // Location
       color: 'warning',
       percentage: 71
     },
     {
-      value: '39.8%',
+      value: '76', // Completed Rides
       color: 'success',
       percentage: 38
+    },
+    {
+      value: '60%', // Profile Completion
+      color: 'warning',
+      percentage: 60
     }
   ];
 
   progressBar6: ProgressBarItem[] = [
+  
     {
-      value: '786',
-      color: 'danger',
-      percentage: 43
-    },
-    {
-      value: '485',
+      value: 'michael_brown', // Username
       color: 'primary',
       percentage: 70
     },
     {
-      value: '769',
+      value: 'michael@example.com', // Email Address
       color: 'warning',
       percentage: 69
     },
     {
-      value: '45,3%',
+      value: '+1 555-789-0123', // Phone Number
       color: 'success',
       percentage: 90
     },
     {
-      value: '6,7%',
+      value: 'Active', // Status
       color: 'info',
       percentage: 80
     },
     {
-      value: '8,56',
+      value: '2 days ago', // Last Login
       color: 'danger',
       percentage: 38
     },
     {
-      value: '10:55',
+      value: 'Berlin, Germany', // Location
       color: 'warning',
       percentage: 55
     },
     {
-      value: '33.8%',
+      value: '33', // Completed Rides
       color: 'success',
       percentage: 70
+    },
+    {
+      value: '95%', // Profile Completion
+      color: 'primary',
+      percentage: 95
     }
   ];
 
   progressBar7: ProgressBarItem[] = [
+   
     {
-      value: '786',
-      color: 'danger',
-      percentage: 61
-    },
-    {
-      value: '523',
+      value: 'sarah_connor', // Username
       color: 'primary',
       percentage: 45
     },
     {
-      value: '736',
+      value: 'sarah@example.com', // Email Address
       color: 'warning',
       percentage: 70
     },
     {
-      value: '78,3%',
+      value: '+1 555-321-6547', // Phone Number
       color: 'success',
       percentage: 60
     },
     {
-      value: '6,6%',
+      value: 'Pending Verification', // Status
       color: 'info',
       percentage: 38
     },
     {
-      value: '7,56',
+      value: 'Just now', // Last Login
       color: 'danger',
       percentage: 40
     },
     {
-      value: '4:30',
+      value: 'Toronto, Canada', // Location
       color: 'warning',
       percentage: 70
     },
     {
-      value: '76.8%',
+      value: '76', // Completed Rides
       color: 'success',
       percentage: 40
+    },
+    {
+      value: '30%', // Profile Completion
+      color: 'danger',
+      percentage: 30
     }
   ];
 }

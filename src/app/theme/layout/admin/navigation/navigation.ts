@@ -58,20 +58,13 @@ export const NavigationItems: NavigationItem[] = [
     children: [
       {
         id: 'forms',
-        title: 'Basic Forms',
+        title: 'Challenge  Forms',
         type: 'item',
         url: '/forms',
         classes: 'nav-item',
         icon: 'feather icon-file-text'
-      },
-      {
-        id: 'tables',
-        title: 'tables',
-        type: 'item',
-        url: '/tables',
-        classes: 'nav-item',
-        icon: 'feather icon-server'
       }
+     
     ]
   },
   {

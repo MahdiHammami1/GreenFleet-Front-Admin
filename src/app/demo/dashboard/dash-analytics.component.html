@@ -22,7 +22,7 @@
 
   <!-- conversion-section end -->
   <div class="col-md-12">
-    <app-card cardTitle="Campaign Monitor" cardClass="tab-card tab-content" blockClass="nav-fill" [options]="false">
+    <app-card cardTitle="" cardClass="tab-card tab-content" blockClass="nav-fill" [options]="false">
       <ul ngbNav #nav="ngbNav" aria-busy="true" class="nav-pills">
         <li [ngbNavItem]="1" class="flex">
           <a ngbNavLink>
@@ -37,11 +37,13 @@
         </li>
         <li [ngbNavItem]="2" class="flex">
           <a ngbNavLink>
-            <i class="fa fa-key m-r-10"></i>
+            <i class="fa fa-car m-r-10"></i>
             Vehicles
           </a>
           <ng-template ngbNavContent>
-            <app-product-sale></app-product-sale>
+            <div class="table-responsive">
+              <app-vehicles></app-vehicles>
+            </div>
           </ng-template>
         </li>
         <li [ngbNavItem]="3" class="flex">
@@ -50,18 +52,10 @@
             Top-Users Ranking
           </a>
           <ng-template ngbNavContent>
-            <app-product-sale></app-product-sale>
+            <app-ranking></app-ranking>
           </ng-template>
         </li>
-        <li [ngbNavItem]="4" class="flex">
-          <a ngbNavLink>
-            <i class="fa fa-check m-r-10"></i>
-            best-performing
-          </a>
-          <ng-template ngbNavContent>
-            <app-product-sale></app-product-sale>
-          </ng-template>
-        </li>
+       
       </ul>
       <div [ngbNavOutlet]="nav" class="mt-2"></div>
     </app-card>
