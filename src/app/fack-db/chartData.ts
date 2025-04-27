@@ -24,7 +24,7 @@ export class ChartDB {
       }
     ],
     title: {
-      text: 'Product Trends by Month',
+      text: 'User Adoption Over Time',
       align: 'left'
     },
     grid: {
@@ -160,7 +160,7 @@ export class ChartDB {
     dataLabels: {
       enabled: false
     },
-    colors: ['#0e9e4a', '#4099ff', '#FF5370'],
+    colors: [ '#4099ff', '#FF5370' , '#0e9e4a'],
     stroke: {
       show: true,
       width: 2,
@@ -168,15 +168,15 @@ export class ChartDB {
     },
     series: [
       {
-        name: 'Net Profit',
+        name: 'Carpooling Emissions',
         data: [44, 55, 57, 56, 61, 58, 63]
       },
       {
-        name: 'Revenue',
+        name: 'Normal Travel Emissions',
         data: [76, 85, 101, 98, 87, 105, 91]
       },
       {
-        name: 'Free Cash Flow',
+        name: 'CO₂ Saved',
         data: [35, 41, 36, 26, 45, 48, 52]
       }
     ],
@@ -185,7 +185,7 @@ export class ChartDB {
     },
     yaxis: {
       title: {
-        text: '$ (thousands)'
+        text: 'KG '
       }
     },
     fill: {
@@ -193,7 +193,7 @@ export class ChartDB {
     },
     tooltip: {
       y: {
-        formatter: (val: string) => '$ ' + val + ' thousands'
+        formatter: (val: string) =>   val + ' KG'
       }
     }
   };
@@ -432,12 +432,12 @@ export class ChartDB {
     },
     series: [
       {
-        name: 'Website Blog',
+        name: 'Number of Rides	',
         type: 'column',
         data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
       },
       {
-        name: 'Social Media',
+        name: 'Number of Participants',
         type: 'line',
         data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
       }
@@ -447,35 +447,26 @@ export class ChartDB {
     },
     colors: ['#4099ff', '#FF5370'],
     title: {
-      text: 'Traffic Sources'
+      text: 'Regions'
     },
-    labels: [
-      '01 Jan 2001',
-      '02 Jan 2001',
-      '03 Jan 2001',
-      '04 Jan 2001',
-      '05 Jan 2001',
-      '06 Jan 2001',
-      '07 Jan 2001',
-      '08 Jan 2001',
-      '09 Jan 2001',
-      '10 Jan 2001',
-      '11 Jan 2001',
-      '12 Jan 2001'
-    ],
+    
     xaxis: {
-      type: 'datetime'
+      type: 'category',
+      title: {
+        text: 'Location'
+      },
+      categories: ['Ariana', 'Aouina', 'Lac1', 'Marsa', 'Ain Zaghouene', 'Sokra', 'Mnihla', 'Mornagueya', 'Megurine', 'Zahra', 'Hammam l"inf', 'Ghazela'] // example locations
     },
     yaxis: [
       {
         title: {
-          text: 'Website Blog'
+          text: 'Number of Participants'
         }
       },
       {
         opposite: true,
         title: {
-          text: 'Social Media'
+          text: 'Number of Rides	'
         }
       }
     ]
@@ -1326,7 +1317,7 @@ export class ChartDB {
       height: 320,
       type: 'pie'
     },
-    labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+    labels: ['Volkswagen', 'Toyota', 'Honda', 'Nissan', 'Ford'],
     series: [44, 55, 13, 43, 22],
     colors: ['#4099ff', '#0e9e4a', '#00acc1', '#FFB64D', '#FF5370'],
     legend: {

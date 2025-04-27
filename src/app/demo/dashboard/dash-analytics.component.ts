@@ -1,5 +1,6 @@
 // angular import
-import { Component, viewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy, viewChild } from '@angular/core';
+import { ChartDB } from 'src/app/fack-db/chartData';
 
 // project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
@@ -15,6 +16,9 @@ import { ApexOptions, ChartComponent, NgApexchartsModule } from 'ng-apexcharts';
   templateUrl: './dash-analytics.component.html',
   styleUrls: ['./dash-analytics.component.scss']
 })
+
+
+
 export default class DashAnalyticsComponent {
   // public props
   chart = viewChild<ChartComponent>('chart');
@@ -24,9 +28,13 @@ export default class DashAnalyticsComponent {
   chartOptions_2!: Partial<ApexOptions>;
   chartOptions_3!: Partial<ApexOptions>;
 
+
   // constructor
-  constructor() {
+  constructor() { 
+    
+
     this.chartOptions = {
+      
       chart: {
         height: 205,
         type: 'line',
@@ -215,34 +223,34 @@ export default class DashAnalyticsComponent {
     {
       background: 'bg-c-blue',
       title: 'Rides Shared',
-      icon: 'icon-shopping-cart',
+      icon: 'bi bi-car-front',
       text: 'Five-Star Rated Rides',
       number: '486',
       no: '351'
     },
     {
       background: 'bg-c-green',
-      title: 'Total Sales',
-      icon: 'icon-tag',
+      title: 'Active Drivers',
+      icon: 'bi bi-person-check',
       text: 'This Month',
       number: '1641',
       no: '213'
     },
     {
       background: 'bg-c-yellow',
-      title: 'Revenue',
-      icon: 'icon-repeat',
+      title: 'CO2 Saved ',
+      icon: 'bi bi-tree',
       text: 'This Month',
-      number: '$42,56',
-      no: '$5,032'
+      number: '1641 KG',
+      no: '213 KG'
     },
     {
       background: 'bg-c-red',
       title: 'Total Distance Shared',
-      icon: 'icon-shopping-cart',
+      icon: 'bi bi-geo-alt',
       text: 'This Month',
       number: '42,560 km',
-      no: '$1083'
+      no: '5,032 km'
     }
   ];
 

@@ -26,15 +26,54 @@ export const NavigationItems: NavigationItem[] = [
     icon: 'icon-group',
     children: [
       {
-        id: 'dashboard',
-        title: 'Dashboard',
+        id: 'Dashboard',
+        title: 'Home',
         type: 'item',
         url: '/analytics',
         icon: 'feather icon-home'
       }
     ]
   },
-  
+  {
+    id: 'chart',
+    title: 'Chart',
+    type: 'group',
+    icon: 'icon-group',
+    children: [
+      {
+        id: 'apexchart',
+        title: 'Charts',
+        type: 'item',
+        url: '/chart',
+        classes: 'nav-item',
+        icon: 'feather icon-pie-chart'
+      }
+    ]
+  },
+  {
+    id: 'forms & tables',
+    title: 'Users Ranking',
+    type: 'group',
+    icon: 'icon-group',
+    children: [
+      {
+        id: 'forms',
+        title: 'Basic Forms',
+        type: 'item',
+        url: '/forms',
+        classes: 'nav-item',
+        icon: 'feather icon-file-text'
+      },
+      {
+        id: 'tables',
+        title: 'tables',
+        type: 'item',
+        url: '/tables',
+        classes: 'nav-item',
+        icon: 'feather icon-server'
+      }
+    ]
+  },
   {
     id: 'Authentication',
     title: 'Authentication',
