@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 // project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
+import ButtonComponent from '../../ui-element/button/button.component';
 
 interface ProgressBarItem {
   value: string;
@@ -21,7 +22,7 @@ export class ProductSaleComponent {
   // public method
   product_sale = [
     {
-      title: 'Enrollment Date'
+      title: 'Ban User',
     },
     {
       title: 'Username',
@@ -47,7 +48,9 @@ export class ProductSaleComponent {
     {
       title: 'Profile Completion',
       icon: 'icon-user-check',
-    }
+    },
+    
+    
   ];
 
   progressBar: ProgressBarItem[] = [
@@ -135,7 +138,13 @@ export class ProductSaleComponent {
       value: '90%', // Profile Completion
       color: 'primary',
       percentage: 90
+    },
+    {
+      value: 'Ban User', // Ban User
+      color: 'danger',
+      percentage: 0
     }
+
   ];
 
   progressBar3: ProgressBarItem[] = [
@@ -267,7 +276,8 @@ export class ProductSaleComponent {
       value: '60%', // Profile Completion
       color: 'warning',
       percentage: 60
-    }
+    },
+    
   ];
 
   progressBar6: ProgressBarItem[] = [

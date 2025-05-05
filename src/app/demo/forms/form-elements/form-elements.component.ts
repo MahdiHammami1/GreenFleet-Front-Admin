@@ -1,6 +1,7 @@
 // angular import
 import { Component } from '@angular/core';
 
+
 // project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
 
@@ -17,4 +18,7 @@ import { ColorPickerModule } from 'ngx-color-picker';
   templateUrl: './form-elements.component.html',
   styleUrls: ['./form-elements.component.scss']
 })
-export default class FormElementsComponent {}
+
+export default class FormElementsComponent {
+    
+}

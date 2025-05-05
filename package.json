@@ -1,12 +1,12 @@
 {
-  "name": "gradient-able-free-angular-admin-template",
+  "name": "Green-Fleet",
   "version": "5.2.0",
   "author": "CodedThemes",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-prod": "ng build --configuration production --base-href /demos/admin-templates/gradient-able/angular/free/",
+    "build-prod": "ng build --configuration production --base-href /demos/admin-GreenFleet",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",

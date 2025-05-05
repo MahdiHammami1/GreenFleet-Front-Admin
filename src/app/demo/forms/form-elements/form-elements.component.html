@@ -1,4 +1,5 @@
-<div class="row">
+ 
+ <div class="row">
   <div class="col-sm-12">
     <app-card cardTitle="Challenge Form" [options]="false">
       <h5>New Challenge</h5>
@@ -58,5 +59,66 @@
         </div>
       </div>
     </app-card>
+
+    
+ </div>
+  <div class="col-xl-12">
+    <app-card cardTitle="Striped Table" [options]="false" blockClass="table-border-style">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Challenge Name</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Challenge Description</th>
+              <th>Weekly Ride Limits</th>
+              <th>New Users Only</th>
+              <th>All Users</th>
+              <th>File Upload</th>
+              <th>Submit</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>Spring Cyclathon</td>
+              <td>2025-03-01</td>
+              <td>2025-03-31</td>
+              <td>A month-long cycling challenge to welcome spring. Complete 150 km to earn a badge.</td>
+              <td>40 km/week</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td><input type="file" name="springCyclathonFile" /></td>
+              <td><button type="submit" class="btn btn-primary">Submit</button></td>
+            </tr>
+            <tr>
+              <td>New Riders Welcome</td>
+              <td>2025-04-01</td>
+              <td>2025-04-15</td>
+              <td>Exclusively for new users. Complete 50 km in two weeks and get a free T-shirt.</td>
+              <td>25 km/week</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td><input type="file" name="newRidersFile" /></td>
+              <td><button type="submit" class="btn btn-primary">Submit</button></td>
+            </tr>
+            <tr>
+              <td>Earth Day Ride</td>
+              <td>2025-04-22</td>
+              <td>2025-04-22</td>
+              <td>Join the global ride to celebrate Earth Day. One-day challenge: ride 15 km.</td>
+              <td>15 km/day</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td><input type="file" name="earthDayFile" /></td>
+              <td><button type="submit" class="btn btn-primary">Submit</button></td>
+            </tr>
+          </tbody>
+          
+        </table>
+      </div>
+    </app-card>
   </div>
-</div>
+ 
+</div> 
