@@ -3,17 +3,17 @@ import { Component, viewChild } from '@angular/core';
 
 // project import
 import { SharedModule } from 'src/app/theme/shared/shared.module';
-import { ProductSaleComponent } from './product-sale/product-sale.component';
 import { VehicleComponent } from './vehicles/vehicles.component';
 import { RankingComponent } from './ranking/ranking.component';
 
 // 3rd party import
 
 import { ApexOptions, ChartComponent, NgApexchartsModule } from 'ng-apexcharts';
+import { ProductSaleComponent } from './product-sale/product-sale.component';
 @Component({
   selector: 'app-dash-analytics',
   standalone: true,
-  imports: [SharedModule, NgApexchartsModule, ProductSaleComponent , VehicleComponent , RankingComponent],
+  imports: [SharedModule, NgApexchartsModule, ProductSaleComponent, VehicleComponent , RankingComponent],
   templateUrl: './dash-analytics.component.html',
   styleUrls: ['./dash-analytics.component.scss']
 })
